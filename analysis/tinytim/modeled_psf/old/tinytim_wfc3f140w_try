@@ -1,0 +1,779 @@
+Last login: Fri Apr 25 14:31:55 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ cd Research/ADGD-PartIII/analysis/galfit/
+(base) Eriks-MacBook-Pro:galfit erikjwasleske$ ls
+HOW_TO_RUN.txt		galfitanalysistest.py	run_galfit.ipynb
+__pycache__		galfitanaysis.py	run_galfit.py
+fit.log			output
+galfit			paramter_files
+(base) Eriks-MacBook-Pro:galfit erikjwasleske$ galfit galfit.feedme
+-bash: galfit: command not found
+(base) Eriks-MacBook-Pro:galfit erikjwasleske$ cd ..
+(base) Eriks-MacBook-Pro:analysis erikjwasleske$ ls
+README.txt	galfit		isophote_fit	tinytim
+(base) Eriks-MacBook-Pro:analysis erikjwasleske$ cd --
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ ls
+AGN_venn_diagram_v5.png	PyQSOFit		perl5
+ATLAS			Research		pfiles
+Applications		SASbashrc		pimms
+CLAPACK-3.2.1		caterpillar		planck
+Desktop			cigale-v2022.0		ppxf_examples
+Documents		cigale_ex		psfex-3.18.2
+Downloads		cosmos_stack_fits	sas_20.0.0-macOS-11.6
+Library			cxcds_param4		sdssXtwom_v4.fits
+Movies			fftw-3.3.9		sextractor
+Music			fvtmp			sfd
+PFLIX_XMM_upplimits	galfit			skipper
+Pictures		heasoft-6.29		xspec_12
+Public			opt
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ mkdir tinytim
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ ls
+AGN_venn_diagram_v5.png	PyQSOFit		perl5
+ATLAS			Research		pfiles
+Applications		SASbashrc		pimms
+CLAPACK-3.2.1		caterpillar		planck
+Desktop			cigale-v2022.0		ppxf_examples
+Documents		cigale_ex		psfex-3.18.2
+Downloads		cosmos_stack_fits	sas_20.0.0-macOS-11.6
+Library			cxcds_param4		sdssXtwom_v4.fits
+Movies			fftw-3.3.9		sextractor
+Music			fvtmp			sfd
+PFLIX_XMM_upplimits	galfit			skipper
+Pictures		heasoft-6.29		tinytim
+Public			opt			xspec_12
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ cd tinytim/
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ tinytim-master/
+-bash: tinytim-master/: is a directory
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ uncompress tinytimv63.tar.Z 
+uncompress: tinytimv63.tar.Z: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+tinytim-7.5.zip
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+tinytim-7.5.tar.gz	tinytim-7.5.zip
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ uncompress tinytim-7.5.tar.gz
+overwrite tinytim-7.5.tar.gz? y
+uncompress: tinytim-7.5.tar.gz.Z: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+tinytim-7.5.tar.gz	tinytim-7.5.zip
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ uncompress tinytim-7.5.tar.gz
+overwrite tinytim-7.5.tar.gz? tar xvf tinytim-7.5.tar   
+uncompress: tinytim-7.5.tar.gz already exists
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+tinytim-7.5		tinytim-7.5.tar.gz	tinytim-7.5.zip
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ cd tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls
+Makefile		focf96.fil		stisccd.tab
+READ.ME			focf96.pup		stisfuv.fil
+README.1ST		halo.c			stisfuv.pup
+RELEASE.TXT		image.c			stisfuv.tab
+TinyTim_WFC3.doc	inputs.c		stisnuv.fil
+aber.tab		inter.c			stisnuv.pup
+acs.c			intpsf.c		stisnuv.tab
+acshrc.fil		jitter.c		system.c
+acshrc.pup		make.mp			tiny1.c
+acshrc.tab		make.t1			tiny2.c
+acshrcoffspot.pup	make.t2			tiny3.c
+acssbc.fil		make.t3			tinytim.doc
+acssbc.pup		makemaps.c		tinytim.h
+acssbc.tab		map.c			tinytim.pdf
+acswfc.fil		misc.c			v2v3.c
+acswfc1.pup		monopsf.c		vignet.c
+acswfc1.tab		newnicmos1.pup		wfc3_ir.pup
+acswfc2.pup		newnicmos1.tab		wfc3_ir.tab
+acswfc2.tab		newnicmos1_old.tab	wfc3_uvis1.pup
+bpgs_1.dat		newnicmos2.pup		wfc3_uvis1.tab
+bpgs_11.dat		newnicmos2.tab		wfc3_uvis2.pup
+bpgs_14.dat		newnicmos2_old.pup	wfc3_uvis2.tab
+bpgs_2.dat		newnicmos2_old.tab	wfc3ir.fil
+bpgs_24.dat		newnicmos3.pup		wfc3ir_full_idc.fits
+bpgs_3.dat		newnicmos3.tab		wfc3uvis.fil
+bpgs_33.dat		newpri.tab		wfc3uvis_full_idc.fits
+bpgs_4.dat		newsec.tab		wfpc1.fil
+bpgs_41.dat		nicmos.tab		wfpc2.fil
+bpgs_46.dat		nicmos1.fil		wfpc2pc.tab
+bpgs_51.dat		nicmos1.pup		wfpc2pc1.pup
+bpgs_53.dat		nicmos1.tab		wfpc2wf2.pup
+bpgs_57.dat		nicmos2.fil		wfpc2wf2.tab
+bpgs_65.dat		nicmos2.pup		wfpc2wf3.pup
+bpgs_66.dat		nicmos2.tab		wfpc2wf3.tab
+bpgs_68.dat		nicmos3.fil		wfpc2wf4.pup
+bpgs_7.dat		nicmos3.pup		wfpc2wf4.tab
+cflow.graph		nicmos3.tab		wfpcpc5.pup
+compgrid.c		nicmosaber.tab		wfpcpc5.tab
+convotf.c		oldpri.tab		wfpcpc6.pup
+costarf48.pup		opd.c			wfpcpc6.tab
+costarf96.pup		outputs.c		wfpcpc7.pup
+costarfocf48.fil	param.c			wfpcpc7.tab
+costarfocf96.fil	polypsf.c		wfpcpc8.pup
+cpupil.c		psf.c			wfpcpc8.tab
+distort.c		pupil.c			wfpcwf1.pup
+entry.c			pupil.tab		wfpcwf1.tab
+extinct.dat		rdpupil.c		wfpcwf2.pup
+fft.c			rotate.c		wfpcwf2.tab
+fitsio.c		spectra.lis		wfpcwf3.pup
+foc.tab			spectrum.c		wfpcwf3.tab
+foc2ab.tab		stis.pup		wfpcwf4.pup
+focf48.fil		stisccd.fil		wfpcwf4.tab
+focf48.pup		stisccd.pup		zernike.c
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ make macosx
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c compgrid.c
+objc[39734]: Class AMSupportURLConnectionDelegate is implemented in both /usr/lib/libauthinstall.dylib (0x1f995d160) and /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1143142b8). One of the two will be used. Which one is undefined.
+objc[39734]: Class AMSupportURLSession is implemented in both /usr/lib/libauthinstall.dylib (0x1f995d1b0) and /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x114314308). One of the two will be used. Which one is undefined.
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from compgrid.c:42:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c entry.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c inputs.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c misc.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from misc.c:38:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c outputs.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c rdpupil.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c spectrum.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from spectrum.c:13:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c system.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c tiny1.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from tiny1.c:69:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c v2v3.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from v2v3.c:17:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c zernike.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from zernike.c:44:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc compgrid.o entry.o inputs.o misc.o outputs.o rdpupil.o spectrum.o system.o tiny1.o v2v3.o zernike.o -lm -o tiny1
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c convotf.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from convotf.c:13:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c cpupil.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from cpupil.c:36:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c distort.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from distort.c:20:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c fitsio.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+fitsio.c:81:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf( stderr, message );
+                   ^~~~~~~
+fitsio.c:81:20: note: treat the string as an argument to avoid this
+  fprintf( stderr, message );
+                   ^
+                   "%s", 
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c fft.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from fft.c:20:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c halo.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from halo.c:13:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c image.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c inter.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from inter.c:18:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c intpsf.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from intpsf.c:10:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c map.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from map.c:26:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c monopsf.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from monopsf.c:25:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c opd.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from opd.c:27:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c param.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c polypsf.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c psf.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from psf.c:19:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c pupil.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from pupil.c:44:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c rotate.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from rotate.c:21:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c tiny2.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c vignet.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from vignet.c:13:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX acs.c convotf.o cpupil.o distort.o entry.o fitsio.o fft.o halo.o image.o inputs.o inter.o intpsf.o map.o misc.o monopsf.o opd.o outputs.o param.o polypsf.o psf.o pupil.o rdpupil.o rotate.o system.o tiny2.o v2v3.o vignet.o zernike.o -lm -o tiny2 
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from acs.c:21:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c acs.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from acs.c:21:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c tiny3.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+In file included from tiny3.c:26:
+./tinytim.h:30:10: warning: 'M_PI' macro redefined [-Wmacro-redefined]
+#define  M_PI  3.14159265358979323846
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h:694:9: note: previous definition is here
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */
+        ^
+1 warning generated.
+cc acs.o distort.o entry.o fft.o fitsio.o halo.o image.o inputs.o misc.o param.o rdpupil.o system.o tiny3.o v2v3.o zernike.o  -lm -o tiny3 
+cc -O3 -ffast-math -ffloat-store -DMACOSX -c makemaps.c
+clang: warning: optimization flag '-ffloat-store' is not supported [-Wignored-optimization-argument]
+cc makemaps.o misc.o image.o -lm -o makemaps
+./makemaps
+  Creating primary.new
+  Creating second.new
+
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ cwd
+-bash: cwd: command not found
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ dir
+-bash: dir: command not found
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ pd
+-bash: pd: command not found
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ pwd
+/Users/erikjwasleske/tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ setenv TINYTIM /Users/erikjwasleske/tinytim/tinytim-7.5
+-bash: setenv: command not found
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ export TINYTIM /Users/erikjwasleske/tinytim/tinytim-7.5
+-bash: export: `/Users/erikjwasleske/tinytim/tinytim-7.5': not a valid identifier
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ TINYTIM = /Users/erikjwasleske/tinytim/tinytim-7.5
+-bash: TINYTIM: command not found
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ TINYTIM=/Users/erikjwasleske/tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ export TINYTIM
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls TINYTIM
+ls: TINYTIM: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls
+Makefile		entry.c			nicmos1.pup		tiny3
+READ.ME			entry.o			nicmos1.tab		tiny3.c
+README.1ST		extinct.dat		nicmos2.fil		tiny3.o
+RELEASE.TXT		fft.c			nicmos2.pup		tinytim.doc
+TinyTim_WFC3.doc	fft.o			nicmos2.tab		tinytim.h
+aber.tab		fitsio.c		nicmos3.fil		tinytim.pdf
+acs.c			fitsio.o		nicmos3.pup		v2v3.c
+acs.o			foc.tab			nicmos3.tab		v2v3.o
+acshrc.fil		foc2ab.tab		nicmosaber.tab		vignet.c
+acshrc.pup		focf48.fil		oldpri.tab		vignet.o
+acshrc.tab		focf48.pup		opd.c			wfc3_ir.pup
+acshrcoffspot.pup	focf96.fil		opd.o			wfc3_ir.tab
+acssbc.fil		focf96.pup		outputs.c		wfc3_uvis1.pup
+acssbc.pup		halo.c			outputs.o		wfc3_uvis1.tab
+acssbc.tab		halo.o			param.c			wfc3_uvis2.pup
+acswfc.fil		image.c			param.o			wfc3_uvis2.tab
+acswfc1.pup		image.o			polypsf.c		wfc3ir.fil
+acswfc1.tab		inputs.c		polypsf.o		wfc3ir_full_idc.fits
+acswfc2.pup		inputs.o		primary.new		wfc3uvis.fil
+acswfc2.tab		inter.c			psf.c			wfc3uvis_full_idc.fits
+bpgs_1.dat		inter.o			psf.o			wfpc1.fil
+bpgs_11.dat		intpsf.c		pupil.c			wfpc2.fil
+bpgs_14.dat		intpsf.o		pupil.o			wfpc2pc.tab
+bpgs_2.dat		jitter.c		pupil.tab		wfpc2pc1.pup
+bpgs_24.dat		make.mp			rdpupil.c		wfpc2wf2.pup
+bpgs_3.dat		make.t1			rdpupil.o		wfpc2wf2.tab
+bpgs_33.dat		make.t2			rotate.c		wfpc2wf3.pup
+bpgs_4.dat		make.t3			rotate.o		wfpc2wf3.tab
+bpgs_41.dat		makemaps		second.new		wfpc2wf4.pup
+bpgs_46.dat		makemaps.c		spectra.lis		wfpc2wf4.tab
+bpgs_51.dat		makemaps.o		spectrum.c		wfpcpc5.pup
+bpgs_53.dat		map.c			spectrum.o		wfpcpc5.tab
+bpgs_57.dat		map.o			stis.pup		wfpcpc6.pup
+bpgs_65.dat		misc.c			stisccd.fil		wfpcpc6.tab
+bpgs_66.dat		misc.o			stisccd.pup		wfpcpc7.pup
+bpgs_68.dat		monopsf.c		stisccd.tab		wfpcpc7.tab
+bpgs_7.dat		monopsf.o		stisfuv.fil		wfpcpc8.pup
+cflow.graph		newnicmos1.pup		stisfuv.pup		wfpcpc8.tab
+compgrid.c		newnicmos1.tab		stisfuv.tab		wfpcwf1.pup
+compgrid.o		newnicmos1_old.tab	stisnuv.fil		wfpcwf1.tab
+convotf.c		newnicmos2.pup		stisnuv.pup		wfpcwf2.pup
+convotf.o		newnicmos2.tab		stisnuv.tab		wfpcwf2.tab
+costarf48.pup		newnicmos2_old.pup	system.c		wfpcwf3.pup
+costarf96.pup		newnicmos2_old.tab	system.o		wfpcwf3.tab
+costarfocf48.fil	newnicmos3.pup		tiny1			wfpcwf4.pup
+costarfocf96.fil	newnicmos3.tab		tiny1.c			wfpcwf4.tab
+cpupil.c		newpri.tab		tiny1.o			zernike.c
+cpupil.o		newsec.tab		tiny2			zernike.o
+distort.c		nicmos.tab		tiny2.c
+distort.o		nicmos1.fil		tiny2.o
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny1=’$TINYTIM/tiny1’ 
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny2=’$TINYTIM/tiny2’ 
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny3=’$TINYTIM/tiny3’ 
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1 test.par
+-bash: ’/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1’: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ pwd
+/Users/erikjwasleske/tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls /Users/erikjwasleske/tinytim/tinytim-7.5/
+Makefile		entry.c			nicmos1.pup		tiny3
+READ.ME			entry.o			nicmos1.tab		tiny3.c
+README.1ST		extinct.dat		nicmos2.fil		tiny3.o
+RELEASE.TXT		fft.c			nicmos2.pup		tinytim.doc
+TinyTim_WFC3.doc	fft.o			nicmos2.tab		tinytim.h
+aber.tab		fitsio.c		nicmos3.fil		tinytim.pdf
+acs.c			fitsio.o		nicmos3.pup		v2v3.c
+acs.o			foc.tab			nicmos3.tab		v2v3.o
+acshrc.fil		foc2ab.tab		nicmosaber.tab		vignet.c
+acshrc.pup		focf48.fil		oldpri.tab		vignet.o
+acshrc.tab		focf48.pup		opd.c			wfc3_ir.pup
+acshrcoffspot.pup	focf96.fil		opd.o			wfc3_ir.tab
+acssbc.fil		focf96.pup		outputs.c		wfc3_uvis1.pup
+acssbc.pup		halo.c			outputs.o		wfc3_uvis1.tab
+acssbc.tab		halo.o			param.c			wfc3_uvis2.pup
+acswfc.fil		image.c			param.o			wfc3_uvis2.tab
+acswfc1.pup		image.o			polypsf.c		wfc3ir.fil
+acswfc1.tab		inputs.c		polypsf.o		wfc3ir_full_idc.fits
+acswfc2.pup		inputs.o		primary.new		wfc3uvis.fil
+acswfc2.tab		inter.c			psf.c			wfc3uvis_full_idc.fits
+bpgs_1.dat		inter.o			psf.o			wfpc1.fil
+bpgs_11.dat		intpsf.c		pupil.c			wfpc2.fil
+bpgs_14.dat		intpsf.o		pupil.o			wfpc2pc.tab
+bpgs_2.dat		jitter.c		pupil.tab		wfpc2pc1.pup
+bpgs_24.dat		make.mp			rdpupil.c		wfpc2wf2.pup
+bpgs_3.dat		make.t1			rdpupil.o		wfpc2wf2.tab
+bpgs_33.dat		make.t2			rotate.c		wfpc2wf3.pup
+bpgs_4.dat		make.t3			rotate.o		wfpc2wf3.tab
+bpgs_41.dat		makemaps		second.new		wfpc2wf4.pup
+bpgs_46.dat		makemaps.c		spectra.lis		wfpc2wf4.tab
+bpgs_51.dat		makemaps.o		spectrum.c		wfpcpc5.pup
+bpgs_53.dat		map.c			spectrum.o		wfpcpc5.tab
+bpgs_57.dat		map.o			stis.pup		wfpcpc6.pup
+bpgs_65.dat		misc.c			stisccd.fil		wfpcpc6.tab
+bpgs_66.dat		misc.o			stisccd.pup		wfpcpc7.pup
+bpgs_68.dat		monopsf.c		stisccd.tab		wfpcpc7.tab
+bpgs_7.dat		monopsf.o		stisfuv.fil		wfpcpc8.pup
+cflow.graph		newnicmos1.pup		stisfuv.pup		wfpcpc8.tab
+compgrid.c		newnicmos1.tab		stisfuv.tab		wfpcwf1.pup
+compgrid.o		newnicmos1_old.tab	stisnuv.fil		wfpcwf1.tab
+convotf.c		newnicmos2.pup		stisnuv.pup		wfpcwf2.pup
+convotf.o		newnicmos2.tab		stisnuv.tab		wfpcwf2.tab
+costarf48.pup		newnicmos2_old.pup	system.c		wfpcwf3.pup
+costarf96.pup		newnicmos2_old.tab	system.o		wfpcwf3.tab
+costarfocf48.fil	newnicmos3.pup		tiny1			wfpcwf4.pup
+costarfocf96.fil	newnicmos3.tab		tiny1.c			wfpcwf4.tab
+cpupil.c		newpri.tab		tiny1.o			zernike.c
+cpupil.o		newsec.tab		tiny2			zernike.o
+distort.c		nicmos.tab		tiny2.c
+distort.o		nicmos1.fil		tiny2.o
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1 test.par
+-bash: ’/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1’: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1 
+-bash: ’/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1’: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ cd -- 
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ pwd
+/Users/erikjwasleske
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ cd /Users/erikjwasleske/tinytim/tinytim-7.5/
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls
+Makefile		entry.c			nicmos1.pup		tiny3
+READ.ME			entry.o			nicmos1.tab		tiny3.c
+README.1ST		extinct.dat		nicmos2.fil		tiny3.o
+RELEASE.TXT		fft.c			nicmos2.pup		tinytim.doc
+TinyTim_WFC3.doc	fft.o			nicmos2.tab		tinytim.h
+aber.tab		fitsio.c		nicmos3.fil		tinytim.pdf
+acs.c			fitsio.o		nicmos3.pup		v2v3.c
+acs.o			foc.tab			nicmos3.tab		v2v3.o
+acshrc.fil		foc2ab.tab		nicmosaber.tab		vignet.c
+acshrc.pup		focf48.fil		oldpri.tab		vignet.o
+acshrc.tab		focf48.pup		opd.c			wfc3_ir.pup
+acshrcoffspot.pup	focf96.fil		opd.o			wfc3_ir.tab
+acssbc.fil		focf96.pup		outputs.c		wfc3_uvis1.pup
+acssbc.pup		halo.c			outputs.o		wfc3_uvis1.tab
+acssbc.tab		halo.o			param.c			wfc3_uvis2.pup
+acswfc.fil		image.c			param.o			wfc3_uvis2.tab
+acswfc1.pup		image.o			polypsf.c		wfc3ir.fil
+acswfc1.tab		inputs.c		polypsf.o		wfc3ir_full_idc.fits
+acswfc2.pup		inputs.o		primary.new		wfc3uvis.fil
+acswfc2.tab		inter.c			psf.c			wfc3uvis_full_idc.fits
+bpgs_1.dat		inter.o			psf.o			wfpc1.fil
+bpgs_11.dat		intpsf.c		pupil.c			wfpc2.fil
+bpgs_14.dat		intpsf.o		pupil.o			wfpc2pc.tab
+bpgs_2.dat		jitter.c		pupil.tab		wfpc2pc1.pup
+bpgs_24.dat		make.mp			rdpupil.c		wfpc2wf2.pup
+bpgs_3.dat		make.t1			rdpupil.o		wfpc2wf2.tab
+bpgs_33.dat		make.t2			rotate.c		wfpc2wf3.pup
+bpgs_4.dat		make.t3			rotate.o		wfpc2wf3.tab
+bpgs_41.dat		makemaps		second.new		wfpc2wf4.pup
+bpgs_46.dat		makemaps.c		spectra.lis		wfpc2wf4.tab
+bpgs_51.dat		makemaps.o		spectrum.c		wfpcpc5.pup
+bpgs_53.dat		map.c			spectrum.o		wfpcpc5.tab
+bpgs_57.dat		map.o			stis.pup		wfpcpc6.pup
+bpgs_65.dat		misc.c			stisccd.fil		wfpcpc6.tab
+bpgs_66.dat		misc.o			stisccd.pup		wfpcpc7.pup
+bpgs_68.dat		monopsf.c		stisccd.tab		wfpcpc7.tab
+bpgs_7.dat		monopsf.o		stisfuv.fil		wfpcpc8.pup
+cflow.graph		newnicmos1.pup		stisfuv.pup		wfpcpc8.tab
+compgrid.c		newnicmos1.tab		stisfuv.tab		wfpcwf1.pup
+compgrid.o		newnicmos1_old.tab	stisnuv.fil		wfpcwf1.tab
+convotf.c		newnicmos2.pup		stisnuv.pup		wfpcwf2.pup
+convotf.o		newnicmos2.tab		stisnuv.tab		wfpcwf2.tab
+costarf48.pup		newnicmos2_old.pup	system.c		wfpcwf3.pup
+costarf96.pup		newnicmos2_old.tab	system.o		wfpcwf3.tab
+costarfocf48.fil	newnicmos3.pup		tiny1			wfpcwf4.pup
+costarfocf96.fil	newnicmos3.tab		tiny1.c			wfpcwf4.tab
+cpupil.c		newpri.tab		tiny1.o			zernike.c
+cpupil.o		newsec.tab		tiny2			zernike.o
+distort.c		nicmos.tab		tiny2.c
+distort.o		nicmos1.fil		tiny2.o
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ cd -- 
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ tiny1 
+-bash: ’/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1’: No such file or directory
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ tiny1 wfc3.in
+-bash: ’/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1’: No such file or directory
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ pwd TINYTIM
+/Users/erikjwasleske
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ TINYTIM
+-bash: TINYTIM: command not found
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ print $TINYTIM
+-bash: print: command not found
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ echo $TINYTIM
+/Users/erikjwasleske/tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ pwd
+/Users/erikjwasleske
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ cd tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ ls
+Makefile		entry.c			nicmos1.pup		tiny3
+READ.ME			entry.o			nicmos1.tab		tiny3.c
+README.1ST		extinct.dat		nicmos2.fil		tiny3.o
+RELEASE.TXT		fft.c			nicmos2.pup		tinytim.doc
+TinyTim_WFC3.doc	fft.o			nicmos2.tab		tinytim.h
+aber.tab		fitsio.c		nicmos3.fil		tinytim.pdf
+acs.c			fitsio.o		nicmos3.pup		v2v3.c
+acs.o			foc.tab			nicmos3.tab		v2v3.o
+acshrc.fil		foc2ab.tab		nicmosaber.tab		vignet.c
+acshrc.pup		focf48.fil		oldpri.tab		vignet.o
+acshrc.tab		focf48.pup		opd.c			wfc3_ir.pup
+acshrcoffspot.pup	focf96.fil		opd.o			wfc3_ir.tab
+acssbc.fil		focf96.pup		outputs.c		wfc3_uvis1.pup
+acssbc.pup		halo.c			outputs.o		wfc3_uvis1.tab
+acssbc.tab		halo.o			param.c			wfc3_uvis2.pup
+acswfc.fil		image.c			param.o			wfc3_uvis2.tab
+acswfc1.pup		image.o			polypsf.c		wfc3ir.fil
+acswfc1.tab		inputs.c		polypsf.o		wfc3ir_full_idc.fits
+acswfc2.pup		inputs.o		primary.new		wfc3uvis.fil
+acswfc2.tab		inter.c			psf.c			wfc3uvis_full_idc.fits
+bpgs_1.dat		inter.o			psf.o			wfpc1.fil
+bpgs_11.dat		intpsf.c		pupil.c			wfpc2.fil
+bpgs_14.dat		intpsf.o		pupil.o			wfpc2pc.tab
+bpgs_2.dat		jitter.c		pupil.tab		wfpc2pc1.pup
+bpgs_24.dat		make.mp			rdpupil.c		wfpc2wf2.pup
+bpgs_3.dat		make.t1			rdpupil.o		wfpc2wf2.tab
+bpgs_33.dat		make.t2			rotate.c		wfpc2wf3.pup
+bpgs_4.dat		make.t3			rotate.o		wfpc2wf3.tab
+bpgs_41.dat		makemaps		second.new		wfpc2wf4.pup
+bpgs_46.dat		makemaps.c		spectra.lis		wfpc2wf4.tab
+bpgs_51.dat		makemaps.o		spectrum.c		wfpcpc5.pup
+bpgs_53.dat		map.c			spectrum.o		wfpcpc5.tab
+bpgs_57.dat		map.o			stis.pup		wfpcpc6.pup
+bpgs_65.dat		misc.c			stisccd.fil		wfpcpc6.tab
+bpgs_66.dat		misc.o			stisccd.pup		wfpcpc7.pup
+bpgs_68.dat		monopsf.c		stisccd.tab		wfpcpc7.tab
+bpgs_7.dat		monopsf.o		stisfuv.fil		wfpcpc8.pup
+cflow.graph		newnicmos1.pup		stisfuv.pup		wfpcpc8.tab
+compgrid.c		newnicmos1.tab		stisfuv.tab		wfpcwf1.pup
+compgrid.o		newnicmos1_old.tab	stisnuv.fil		wfpcwf1.tab
+convotf.c		newnicmos2.pup		stisnuv.pup		wfpcwf2.pup
+convotf.o		newnicmos2.tab		stisnuv.tab		wfpcwf2.tab
+costarf48.pup		newnicmos2_old.pup	system.c		wfpcwf3.pup
+costarf96.pup		newnicmos2_old.tab	system.o		wfpcwf3.tab
+costarfocf48.fil	newnicmos3.pup		tiny1			wfpcwf4.pup
+costarfocf96.fil	newnicmos3.tab		tiny1.c			wfpcwf4.tab
+cpupil.c		newpri.tab		tiny1.o			zernike.c
+cpupil.o		newsec.tab		tiny2			zernike.o
+distort.c		nicmos.tab		tiny2.c
+distort.o		nicmos1.fil		tiny2.o
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ pwd
+/Users/erikjwasleske/tinytim/tinytim-7.5
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny1=/Users/erikjwasleske/tinytim/tinytim-7.5/tiny.exe 
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1
+-bash: /Users/erikjwasleske/tinytim/tinytim-7.5/tiny.exe: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny1=/Users/erikjwasleske/tinytim/tinytim-7.5/tiny
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1
+-bash: /Users/erikjwasleske/tinytim/tinytim-7.5/tiny: No such file or directory
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny1=/Users/erikjwasleske/tinytim/tinytim-7.5/tiny1
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1
+tiny1 paramfile [major=x minor=y angle=z] [jitter=x] [ebmv=x] [Av=x] [wmag=x]
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny2=/Users/erikjwasleske/tinytim/tinytim-7.5/tiny2
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ alias tiny3=/Users/erikjwasleske/tinytim/tinytim-7.5/tiny3
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny1 wfc3.in
+
+      ------ Tiny Tim v7.5 : The HST PSF Generator ------
+
+                Release Date : June 1, 2008
+                   Developed by John Krist
+             Additional support by Richard Hook & Felix Stoehr
+        >> Manual in /Users/erikjwasleske/tinytim/tinytim-7.5/tinytim.pdf <<
+        ** http://www.stsci.edu/software/tinytim **
+
+--------- Aberrated Cameras ---------  -------- Corrected HST Optics -------
+1) Wide Field Camera (WFPC1)             5) WFPC2 - Wide Field Camera 
+2) Planetary Camera  (WFPC1)             6) WFPC2 - Planetary Camera 
+3) FOC f/48                              7) COSTAR-corrected FOC f/48 
+4) FOC f/96                              8) COSTAR-corrected FOC f/96 
+
+--------- Second Generation ---------  -------- Third Generation ---------
+ 9) NICMOS Camera 1 (pre-cryocooler)    15) ACS - Wide Field Channel 
+10) NICMOS Camera 2 (pre-cryocooler)    16) ACS - High Resolution Channel 
+11) NICMOS Camera 3 (pre-cryocooler)    17) ACS - HRC coronagraph off-spot PSF
+12) STIS CCD                            18) ACS - Solar Blind Channel 
+13) STIS NUV-MAMA                       19) NICMOS Camera 1 + cryocooler 
+14) STIS FUV-MAMA                       20) NICMOS Camera 2 + cryocooler 
+                                        21) NICMOS Camera 3 + cryocooler 
+--------- Fourth Generation --------- 
+22) WFC3 UVIS channel
+23) WFC3 IR channel
+
+Choice : 23
+
+Enter position (x and y) on detector in INTEGER
+pixels (range = 0 to 1013) or the filename of a list
+of positions preceded by a '@' (ie. @xy.lis).
+
+Position : 342 320
+
+Select filter passband :
+    - Enter the name of the filter (eg. f555w)
+    - Enter MONO to specify a single wavelength
+Filter : f140w
+
+21 wavelengths will be used to generate PSF
+
+Choose form of object spectrum :
+    1) Select a spectrum from list
+    2) Blackbody
+    3) Power law : F(nu) = nu^i 
+    4) Power law : F(lambda) = lambda^i 
+    5) Read user-provided spectrum from ASCII table
+Choice : 2
+
+Enter temperature (Kelvin) : 10000
+
+Using undistorted critical sampling pixel size of 0.03924 arcsec
+
+The maximum computable PSF size is 30.0 arcsec.
+The recommended size is about 3.0 arcseconds.
+What diameter should your PSF be (in arcseconds)? : 3
+Secondary mirror despace is scaled by 0.011 and added to Z4.
+Focus, secondary mirror despace? [microns]: 0.54
+
+Rootname of PSF image files (no extension) : wfc3_f140w
+
+To execute the next stage, enter the command :
+        tiny2 wfc3.in
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny2 wfc.in
+Tiny Tim v7.5
+Error opening wfc.in
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny2 wfc3.in
+Tiny Tim v7.5
+Intermediate PSF dimensions are 76 by 76
+
+Computing PSF for position 1/1 (x,y) = 342 320
+   Computing PSF 1/21 for wavelength 1187.16 nm (weight=0.000991)
+   Computing PSF 2/21 for wavelength 1204.63 nm (weight=0.056014)
+   Computing PSF 3/21 for wavelength 1222.36 nm (weight=0.059690)
+   Computing PSF 4/21 for wavelength 1240.35 nm (weight=0.058365)
+   Computing PSF 5/21 for wavelength 1258.60 nm (weight=0.056829)
+   Computing PSF 6/21 for wavelength 1277.13 nm (weight=0.056703)
+   Computing PSF 7/21 for wavelength 1295.92 nm (weight=0.055847)
+   Computing PSF 8/21 for wavelength 1314.99 nm (weight=0.054566)
+   Computing PSF 9/21 for wavelength 1334.35 nm (weight=0.053989)
+   Computing PSF 10/21 for wavelength 1353.98 nm (weight=0.052188)
+   Computing PSF 11/21 for wavelength 1373.91 nm (weight=0.050515)
+   Computing PSF 12/21 for wavelength 1394.13 nm (weight=0.049157)
+   Computing PSF 13/21 for wavelength 1414.65 nm (weight=0.049385)
+   Computing PSF 14/21 for wavelength 1435.47 nm (weight=0.047532)
+   Computing PSF 15/21 for wavelength 1456.59 nm (weight=0.046478)
+   Computing PSF 16/21 for wavelength 1478.03 nm (weight=0.045479)
+   Computing PSF 17/21 for wavelength 1499.78 nm (weight=0.045647)
+   Computing PSF 18/21 for wavelength 1521.86 nm (weight=0.042938)
+   Computing PSF 19/21 for wavelength 1544.25 nm (weight=0.042063)
+   Computing PSF 20/21 for wavelength 1566.98 nm (weight=0.039931)
+   Computing PSF 21/21 for wavelength 1590.04 nm (weight=0.035690)
+   Writing PSF to wfc3_f140w00_psf.fits
+
+Started at  Thu May  8 14:08:03 2025
+Finished at Thu May  8 14:08:04 2025
+
+Writing template optional parameter file for tiny3 to wfc3_f140w.tt3.
+
+To continue PSF processing for ACS and WFC3, you must run tiny3 to resample
+and distort the PSF.  You may also process a simulated scene (see
+the manual for details).
+
+Just to distort the PSF, issue this command :
+
+        tiny3 wfc3.in
+
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ tiny3 wfc3.in
+Tiny Tim v7.5
+Processing PSF for position 1/1 : (x,y) = 342 320
+Reading input PSF from wfc3_f140w00_psf.fits.
+  Input critically-sampled undistorted PSF dimensions are 76 by 76 (0.039242 arcsec/pixel).
+  Mapping PSF onto distorted grid.
+  Convolving PSF with charge diffusion kernel.
+  Writing distorted PSF to wfc3_f140w00.fits (27 by 27 pixels)
+
+Started at  Thu May  8 14:08:56 2025
+Finished at Thu May  8 14:08:56 2025
+(base) Eriks-MacBook-Pro:tinytim-7.5 erikjwasleske$ 

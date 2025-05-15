@@ -1,0 +1,137 @@
+Last login: Thu May 15 09:43:42 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ source ~/tinytim_alias
+ TinyTime Aliases are set. 
+(base) Eriks-MacBook-Pro:~ erikjwasleske$ cd Research/ADGD-PartIII/analysis/tinytim/
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ ls
+HST_despace_measurements.pdf	tinytim_user_manual.pdf
+README.txt			wfc3.in
+modeled_psf
+(base) Eriks-MacBook-Pro:tinytim erikjwasleske$ cd modeled_psf/
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ ls
+f110w_blackbody00.fits		wfc3_f336w.tt3
+old				wfc3_f336w00.fits
+terminal_tinytim_wfc3f336w	wfc3_f336w00_psf.fits
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ tiny1 wfc3.in
+
+      ------ Tiny Tim v7.5 : The HST PSF Generator ------
+
+                Release Date : June 1, 2008
+                   Developed by John Krist
+             Additional support by Richard Hook & Felix Stoehr
+        >> Manual in /Users/erikjwasleske/tinytim/tinytim-7.5/tinytim.pdf <<
+        ** http://www.stsci.edu/software/tinytim **
+
+--------- Aberrated Cameras ---------  -------- Corrected HST Optics -------
+1) Wide Field Camera (WFPC1)             5) WFPC2 - Wide Field Camera 
+2) Planetary Camera  (WFPC1)             6) WFPC2 - Planetary Camera 
+3) FOC f/48                              7) COSTAR-corrected FOC f/48 
+4) FOC f/96                              8) COSTAR-corrected FOC f/96 
+
+--------- Second Generation ---------  -------- Third Generation ---------
+ 9) NICMOS Camera 1 (pre-cryocooler)    15) ACS - Wide Field Channel 
+10) NICMOS Camera 2 (pre-cryocooler)    16) ACS - High Resolution Channel 
+11) NICMOS Camera 3 (pre-cryocooler)    17) ACS - HRC coronagraph off-spot PSF
+12) STIS CCD                            18) ACS - Solar Blind Channel 
+13) STIS NUV-MAMA                       19) NICMOS Camera 1 + cryocooler 
+14) STIS FUV-MAMA                       20) NICMOS Camera 2 + cryocooler 
+                                        21) NICMOS Camera 3 + cryocooler 
+--------- Fourth Generation --------- 
+22) WFC3 UVIS channel
+23) WFC3 IR channel
+
+Choice : 23
+
+Enter position (x and y) on detector in INTEGER
+pixels (range = 0 to 1013) or the filename of a list
+of positions preceded by a '@' (ie. @xy.lis).
+
+Position : 500 500
+
+Select filter passband :
+    - Enter the name of the filter (eg. f555w)
+    - Enter MONO to specify a single wavelength
+Filter : f140w
+
+21 wavelengths will be used to generate PSF
+
+Choose form of object spectrum :
+    1) Select a spectrum from list
+    2) Blackbody
+    3) Power law : F(nu) = nu^i 
+    4) Power law : F(lambda) = lambda^i 
+    5) Read user-provided spectrum from ASCII table
+Choice : 2
+
+Enter temperature (Kelvin) : 10000
+
+Using undistorted critical sampling pixel size of 0.03924 arcsec
+
+The maximum computable PSF size is 30.0 arcsec.
+The recommended size is about 3.0 arcseconds.
+What diameter should your PSF be (in arcseconds)? : 3
+Secondary mirror despace is scaled by 0.011 and added to Z4.
+Focus, secondary mirror despace? [microns]: 0
+
+Rootname of PSF image files (no extension) : wfc3_f140w
+
+To execute the next stage, enter the command :
+        tiny2 wfc3.in
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ tiny2 wfc3.in
+Tiny Tim v7.5
+Intermediate PSF dimensions are 76 by 76
+
+Computing PSF for position 1/1 (x,y) = 500 500
+   Computing PSF 1/21 for wavelength 1187.16 nm (weight=0.000991)
+   Computing PSF 2/21 for wavelength 1204.63 nm (weight=0.056014)
+   Computing PSF 3/21 for wavelength 1222.36 nm (weight=0.059690)
+   Computing PSF 4/21 for wavelength 1240.35 nm (weight=0.058365)
+   Computing PSF 5/21 for wavelength 1258.60 nm (weight=0.056829)
+   Computing PSF 6/21 for wavelength 1277.13 nm (weight=0.056703)
+   Computing PSF 7/21 for wavelength 1295.92 nm (weight=0.055847)
+   Computing PSF 8/21 for wavelength 1314.99 nm (weight=0.054566)
+   Computing PSF 9/21 for wavelength 1334.35 nm (weight=0.053989)
+   Computing PSF 10/21 for wavelength 1353.98 nm (weight=0.052188)
+   Computing PSF 11/21 for wavelength 1373.91 nm (weight=0.050515)
+   Computing PSF 12/21 for wavelength 1394.13 nm (weight=0.049157)
+   Computing PSF 13/21 for wavelength 1414.65 nm (weight=0.049385)
+   Computing PSF 14/21 for wavelength 1435.47 nm (weight=0.047532)
+   Computing PSF 15/21 for wavelength 1456.59 nm (weight=0.046478)
+   Computing PSF 16/21 for wavelength 1478.03 nm (weight=0.045479)
+   Computing PSF 17/21 for wavelength 1499.78 nm (weight=0.045647)
+   Computing PSF 18/21 for wavelength 1521.86 nm (weight=0.042938)
+   Computing PSF 19/21 for wavelength 1544.25 nm (weight=0.042063)
+   Computing PSF 20/21 for wavelength 1566.98 nm (weight=0.039931)
+   Computing PSF 21/21 for wavelength 1590.04 nm (weight=0.035690)
+   Writing PSF to wfc3_f140w00_psf.fits
+
+Started at  Thu May 15 12:35:18 2025
+Finished at Thu May 15 12:35:19 2025
+
+Writing template optional parameter file for tiny3 to wfc3_f140w.tt3.
+
+To continue PSF processing for ACS and WFC3, you must run tiny3 to resample
+and distort the PSF.  You may also process a simulated scene (see
+the manual for details).
+
+Just to distort the PSF, issue this command :
+
+        tiny3 wfc3.in
+
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ tiny wfc3.in
+-bash: tiny: command not found
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ tiny3 wfc3.in
+Tiny Tim v7.5
+Processing PSF for position 1/1 : (x,y) = 500 500
+Reading input PSF from wfc3_f140w00_psf.fits.
+  Input critically-sampled undistorted PSF dimensions are 76 by 76 (0.039242 arcsec/pixel).
+  Mapping PSF onto distorted grid.
+  Convolving PSF with charge diffusion kernel.
+  Writing distorted PSF to wfc3_f140w00.fits (27 by 27 pixels)
+
+Started at  Thu May 15 12:35:33 2025
+Finished at Thu May 15 12:35:33 2025
+(base) Eriks-MacBook-Pro:modeled_psf erikjwasleske$ 
