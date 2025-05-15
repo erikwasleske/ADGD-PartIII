@@ -16,6 +16,7 @@ Active Dwarf Galaxy Database Part III
 HOW TO:
 
 Just Run run_statmorph.py!
+	-> Input file ends up being the parameter file for the Object and Filter stored in /Users/erikjwasleske/Research/ADGD-PartIII/analysis/galfit/paramter_files/OBJID/...
 
 	-> outputs are ./output/convolved_cutout_OBJID_FILTER.png 
 			-> Convolved image and pdf cutout used for statmorph fitting
