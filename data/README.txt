@@ -20,6 +20,8 @@ ADGD_v0_0_9_obj_pos_HSC_output.csv:
 			- each 'W' Wide Filter within those instruments
 			- sum of Observation in non-wide filters
 
+/object_data/######
+	- contains Hubble Space Telescope (HST) imaging data files
 
 
 #%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%
@@ -47,7 +49,7 @@ April 29th, 2025:
 		-> made: ADGD_v0_0_9_obj_pos_HSC_output.csv
 			-> Only has 227 entire though?
 
-	- /Hubble Data Aarchive Search
+	- /Hubble Data Archive Search
 		https://mast.stsci.edu/search/ui/#/hst
 		ADGD_v0_0_9_obj_pos_set1.csv  & ADGD_v0_0_9_obj_pos_set2.csv 
 			-> Search caps out at 500 objects
@@ -65,6 +67,23 @@ April 30th, 2025:
 			- connect outputs of Archive Search to galaxies in ADGD
 			- created /ADGD_obj_HST_Archive_obs_totals.fits
 			- 16 entries from Archive did not get added to this table!!!!
+
+May 7th, 2025:
+	- /Hubble Data Archive Search
+		-> edited /data_per_object.py to settle issues
+		-> /ADGD_obj_HST_Archive_obs_totals.fits should now be accurate W filter data availability table
+			-> with caveat of 16 entries match NO galaxy 
+		
+	- made /object_data
+		-> directory will hold folders named after object ID that contain the image files
+
+May 8th, 2025:
+	- working on NSA104527_v0
+		- data is in /object_data/NAS104527_v0
+
+Aug. 18th, 2025:
+	- updating this documentation
+		
 
 			
 			
